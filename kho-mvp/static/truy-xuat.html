@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#C8F03C">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Truy xuất nguồn gốc · Kho Nông Sản Xanh</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--bg:#F3F6EE;--surface:#fff;--surface2:#EAF0E2;--ink:#12261B;--muted:#56685C;--line:#DCE5D3;--lime:#C8F03C;--edge:#12261B;--green:#0B7A3E;--green-soft:#D9F2E0;--amber:#8A5A00;--amber-soft:#FFEBB5;--red:#C23A1B;--red-soft:#FFDDD3}
+@media(prefers-color-scheme:dark){:root{--bg:#0C1710;--surface:#14241A;--surface2:#1C3024;--ink:#EDF5E8;--muted:#9DB3A3;--line:#26402E;--edge:#000;--green:#5FD38A;--green-soft:#16422A;--amber:#FFCB5C;--amber-soft:#3A2D0B;--red:#FF8A6B;--red-soft:#4A1E14}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Be Vietnam Pro",system-ui,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom)}
+:focus-visible{outline:3px solid var(--green);outline-offset:2px;border-radius:12px}
+.top{background:var(--lime);color:#12261B;padding:calc(16px + env(safe-area-inset-top)) 20px 78px}
+.brand{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:-.02em;font-size:18px}.brand img{width:36px;height:36px}.brand small{display:block;font-weight:500;font-size:12px;opacity:.75;letter-spacing:0}
+.top h1{margin:22px 0 2px;font-size:28px;font-weight:800;letter-spacing:-.03em;line-height:1.12}.top p{margin:0;font-size:15px;opacity:.8}
+.w{max-width:520px;margin:-56px auto 0;padding:0 16px 36px;display:grid;gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 8px 24px -12px rgba(18,38,27,.25)}
+.card h2{margin:0 0 12px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.prod{font-size:24px;font-weight:800;letter-spacing:-.02em;line-height:1.2;margin:0}
+.code{display:inline-block;margin-top:6px;font:600 14px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--surface2);border-radius:8px;padding:2px 9px}
+.st{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:16px;margin-top:14px}
+.st .dot{width:12px;height:12px;border-radius:50%;background:currentColor;flex:none;margin-top:7px}
+.st b{display:block;font-size:17px;line-height:1.35}.st span{display:block;font-size:14px;font-weight:500;opacity:.9}
+.st.ok{background:var(--green-soft);color:var(--green)}.st.wait{background:var(--amber-soft);color:var(--amber)}.st.bad{background:var(--red-soft);color:var(--red)}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.kv div{background:var(--surface2);border-radius:14px;padding:10px 12px}.kv small{display:block;color:var(--muted);font-size:12px}.kv b{font-size:15px}
+.tl{list-style:none;margin:0;padding:0;position:relative}
+.tl li{position:relative;padding:0 0 18px 30px}.tl li:last-child{padding-bottom:0}
+.tl li::before{content:"";position:absolute;left:7px;top:22px;bottom:0;width:2px;background:var(--line)}.tl li:last-child::before{display:none}
+.tl li::after{content:"";position:absolute;left:0;top:4px;width:16px;height:16px;border-radius:50%;background:var(--green);border:3px solid var(--surface);box-shadow:0 0 0 2px var(--green)}
+.tl li.warn::after{background:var(--amber);box-shadow:0 0 0 2px var(--amber)}.tl li.bad::after{background:var(--red);box-shadow:0 0 0 2px var(--red)}
+.tl b{display:block}.tl .s{font-size:14px;color:var(--muted)}
+.meter{margin-top:8px}.meter .bar{height:10px;border-radius:99px;background:var(--surface2);overflow:hidden}.meter i{display:block;height:100%;border-radius:99px;background:var(--green)}
+.meter.amber i{background:#E0A100}.meter.red i{background:var(--red)}
+.meter .l{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:4px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:52px;padding:12px;border-radius:99px;font-weight:700;font-size:16px;font-family:inherit;cursor:pointer;margin-top:12px;border:2px solid var(--edge);background:var(--lime);color:#12261B;box-shadow:0 4px 0 var(--edge);transition:transform .12s,box-shadow .12s}
+.btn:active{transform:translateY(4px);box-shadow:0 0 0 var(--edge)}.btn.neu{background:var(--surface);color:var(--ink);border:2px solid var(--line);box-shadow:none}
+.muted{color:var(--muted);font-size:14px}.note{font-size:12.5px;color:var(--muted);line-height:1.5}
+.center{text-align:center;padding:10px 4px}.center b{display:block;font-size:19px;margin:6px 0}
+video{width:100%;border-radius:18px;background:#000;margin-top:12px;aspect-ratio:1/1;object-fit:cover}
+.sk{height:16px;border-radius:8px;background:linear-gradient(90deg,var(--surface2),var(--line),var(--surface2));background-size:200% 100%;animation:sh 1.2s infinite;margin:10px 0}
+@keyframes sh{to{background-position:-200% 0}}
+svg.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><img src="/logo.svg" alt=""><div>Kho Nông Sản Xanh<small>Truy xuất nguồn gốc</small></div></div>
+  <h1 id="h1">Đang tải thông tin lô hàng…</h1>
+  <p id="sub">Dữ liệu lấy trực tiếp từ hệ thống quản lý kho</p>
+</header>
+<main class="w" id="main" aria-live="polite"><div class="card"><div class="sk" style="width:60%"></div><div class="sk"></div><div class="sk" style="width:80%"></div></div></main>
+
+<script>
+(function(){
+var main=document.getElementById("main"),h1=document.getElementById("h1"),sub=document.getElementById("sub");
+var SCAN='<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8V5a1 1 0 011-1h3M16 4h3a1 1 0 011 1v3M20 16v3a1 1 0 01-1 1h-3M8 20H5a1 1 0 01-1-1v-3"/><path d="M7 12h10"/></svg>';
+
+function el(tag,cls,text){var e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e}
+function card(title){var c=el("section","card");if(title)c.appendChild(el("h2",null,title));return c}
+function dmy(s){if(!s)return"–";var p=String(s).slice(0,10).split("-");return p.length===3?p[2]+"/"+p[1]+"/"+p[0]:s}
+function nf(n){return Number(n).toLocaleString("vi-VN",{maximumFractionDigits:2})}
+function tl(items){var ul=el("ul","tl");items.forEach(function(it){var li=el("li",it.tone||"");li.appendChild(el("b",null,it.t));(it.lines||[]).forEach(function(x){li.appendChild(el("div","s",x))});ul.appendChild(li)});return ul}
+function show(nodes){main.replaceChildren.apply(main,nodes)}
+
+function fail(title,text){
+  h1.textContent="Không xem được thông tin";sub.textContent="Hãy thử quét lại mã QR trên tem";
+  var c=card();var d=el("div","center");d.appendChild(el("b",null,title));d.appendChild(el("div","muted",text));c.appendChild(d);
+  var b=el("button","btn");b.type="button";b.textContent="Quét lại mã QR";b.onclick=function(){location.href="/t"};c.appendChild(b);show([c]);
+}
+
+function render(d){
+  document.title=d.product+" · Truy xuất nguồn gốc";
+  h1.textContent="Nguồn gốc nông sản";sub.textContent="Thông tin lô "+d.code;
+  var nodes=[];
+
+  var c=card();
+  c.appendChild(el("p","prod",d.product));c.appendChild(el("span","code",d.code));
+  var st=el("div","st "+d.tone);st.setAttribute("role","status");st.appendChild(el("i","dot"));
+  var t=el("div");t.appendChild(el("b",null,d.title));t.appendChild(el("span",null,d.text));st.appendChild(t);c.appendChild(st);
+  if(d.recall){var rl=el("div","note","Thu hồi từ ngày "+dmy(d.recall.date)+(d.recall.closed?" (đã xử lý xong, lô không còn được bán).":" (đang xử lý)."));rl.style.marginTop="10px";c.appendChild(rl)}
+  var kv=el("div","kv");
+  [["Ngày thu hoạch",dmy(d.harvest_date)],["Hạn sử dụng",dmy(d.expiry_date)+(d.days_left>=0&&d.verdict!=="THU_HOI"?" (còn "+d.days_left+" ngày)":"")],["Chứng nhận",d.farm.cert],["Xuất xứ",d.farm.area]].forEach(function(x){var b=el("div");b.appendChild(el("small",null,x[0]));b.appendChild(el("b",null,x[1]));kv.appendChild(b)});
+  c.appendChild(kv);nodes.push(c);
+
+  var q=card("An toàn thực phẩm");
+  var ratio=d.qa.residue==null||!d.qa.mrl?null:d.qa.residue/d.qa.mrl;
+  if(ratio==null){q.appendChild(el("div","muted","Lô chưa có kết quả đo dư lượng thuốc bảo vệ thực vật."))}
+  else{
+    var tone=ratio>1?"red":ratio>0.6?"amber":"";
+    var row=el("div");row.appendChild(el("b",null,"Dư lượng thuốc BVTV: "+nf(d.qa.residue)+" mg/kg"));q.appendChild(row);
+    q.appendChild(el("div","muted","Giới hạn cho phép của mặt hàng này: "+nf(d.qa.mrl)+" mg/kg"));
+    var m=el("div","meter "+tone),bar=el("div","bar"),fill=el("i");fill.style.width=Math.min(100,Math.round(ratio*100))+"%";bar.appendChild(fill);m.appendChild(bar);
+    var l=el("div","l");l.appendChild(el("span",null,"0"));l.appendChild(el("span",null,"Giới hạn "+nf(d.qa.mrl)));m.appendChild(l);q.appendChild(m);
+  }
+  var ph=el("div",null);ph.style.marginTop="14px";
+  if(d.spray.date){
+    ph.appendChild(el("b",null,d.spray.enough?"Đủ thời gian cách ly trước thu hoạch":"Chưa đủ thời gian cách ly trước thu hoạch"));
+    ph.appendChild(el("div","muted","Phun thuốc lần cuối "+dmy(d.spray.date)+", thu hoạch sau "+d.spray.gap_days+" ngày (yêu cầu tối thiểu "+d.spray.phi_days+" ngày)."));
+  }else{ph.appendChild(el("b",null,"Không ghi nhận phun thuốc bảo vệ thực vật"))}
+  q.appendChild(ph);
+  if(d.qa.grade)q.appendChild(el("div","muted","Phân loại: "+d.qa.grade));
+  nodes.push(q);
+
+  var j=card("Hành trình của lô hàng");
+  j.appendChild(tl([
+    {t:d.farm.name,lines:[d.farm.area+" · "+d.farm.cert]},
+    {t:"Thu hoạch ngày "+dmy(d.harvest_date)},
+    {t:"Nhập kho "+d.storage.name,lines:[d.storage.city+(d.storage.received?" · ngày "+dmy(d.storage.received):""),"Điều kiện bảo quản "+d.storage.temp_min+"–"+d.storage.temp_max+" °C"]},
+    {t:"Kiểm định chất lượng",tone:d.qa.status==="DAT"?"":d.qa.status==="CHO_KIEM_DINH"?"warn":"bad",lines:[d.qa.status==="DAT"?"Đạt":d.qa.status==="CHO_KIEM_DINH"?"Đang chờ kết quả":d.qa.status==="CACH_LY"?"Đang cách ly":"Không đạt"]}
+  ].concat(d.recall?[{t:"Thu hồi",tone:"bad",lines:["Ngày "+dmy(d.recall.date)]}]:[])));
+  nodes.push(j);
+
+  if(d.journey&&d.journey.length){
+    var vj=card(d.shipment?"Hành trình vận chuyển của chuyến hàng này":"Hành trình vận chuyển (GPS)");
+    d.journey.forEach(function(g){
+      var items=[{t:g.label+" · "+g.status_label,lines:[g.from+" → "+g.to+(g.distance_km?" · "+nf(g.distance_km)+" km":"")+(g.plate?" · xe "+g.plate:"")]}];
+      g.stops.forEach(function(x){items.push({t:"["+x.time+"] "+x.text})});
+      var tp=g.temp,bad=tp.exceeded>0;
+      items.push({t:"Nhiệt độ thùng xe",tone:bad?"bad":"",lines:[tp.points?(bad?"Có "+tp.exceeded+" điểm vượt ngưỡng "+tp.min+"–"+tp.max+" °C":"Trong ngưỡng "+tp.min+"–"+tp.max+" °C suốt hành trình"):"Chưa có số liệu nhiệt độ"]});
+      var box=el("div");box.style.marginBottom="14px";box.appendChild(tl(items));
+      if(g.source==="SIM")box.appendChild(el("div","note","Mô phỏng: dữ liệu vị trí chạy thử, không phải GPS thật."));
+      vj.appendChild(box)});
+    nodes.push(vj);
+  }
+
+  var f=card();
+  var cp=el("button","btn neu");cp.type="button";cp.textContent="Sao chép liên kết trang này";
+  cp.onclick=function(){var done=function(){cp.textContent="Đã sao chép"};if(navigator.clipboard)navigator.clipboard.writeText(location.href).then(done,done);else done()};f.appendChild(cp);
+  var n=el("p","note","Thông tin do hệ thống Kho Nông Sản Xanh cung cấp tại thời điểm "+dmy(d.today)+". Đây là hệ thống của đồ án môn học, dữ liệu là dữ liệu mẫu. Trang này không hiển thị thông tin về khách hàng, giá bán hay tồn kho.");n.style.marginTop="14px";f.appendChild(n);
+  nodes.push(f);
+  show(nodes);
+}
+
+/* ---- khi chưa có mã: hướng dẫn và quét bằng camera ---- */
+function landing(){
+  h1.textContent="Quét mã QR trên tem";sub.textContent="Xem nguồn gốc, kiểm định và hạn dùng của nông sản";
+  var c=card();var d=el("div","center");d.appendChild(el("b",null,"Chưa có mã lô"));
+  d.appendChild(el("div","muted","Dùng ứng dụng Camera của điện thoại hướng vào mã QR trên tem, hoặc bấm nút bên dưới để quét ngay tại trang này."));c.appendChild(d);
+  var b=el("button","btn");b.type="button";b.innerHTML=SCAN+" ";b.appendChild(document.createTextNode("Mở camera để quét"));
+  var v=el("video");v.setAttribute("playsinline","");v.muted=true;v.hidden=true;
+  var msg=el("div","note");msg.style.marginTop="10px";msg.setAttribute("role","status");
+  var stream=null,stop=false;
+  function end(){stop=true;if(stream){stream.getTracks().forEach(function(t){t.stop()});stream=null}v.hidden=true}
+  function handle(raw){
+    try{var u=new URL(raw,location.href);
+      if(u.origin===location.origin&&u.pathname.indexOf("/t/")===0){end();location.href=u.pathname+u.search;return true}
+    }catch(e){}
+    msg.textContent="Mã QR này không thuộc hệ thống Kho Nông Sản Xanh. Hãy quét tem trên sản phẩm.";return false;
+  }
+  b.onclick=function(){
+    if(!("BarcodeDetector" in window)||!navigator.mediaDevices){msg.textContent="Trình duyệt này chưa hỗ trợ quét trong trang. Hãy mở ứng dụng Camera của điện thoại và hướng vào mã QR.";return}
+    stop=false;msg.textContent="";
+    navigator.mediaDevices.getUserMedia({video:{facingMode:"environment"}}).then(function(s){
+      stream=s;v.srcObject=s;v.hidden=false;return v.play();
+    }).then(function(){
+      var det=new BarcodeDetector({formats:["qr_code"]});
+      (function tick(){if(stop)return;det.detect(v).then(function(r){if(r.length&&handle(r[0].rawValue))return;setTimeout(tick,250)}).catch(function(){setTimeout(tick,400)})})();
+    }).catch(function(){end();msg.textContent="Không mở được camera. Hãy cho phép truy cập camera hoặc dùng ứng dụng Camera của điện thoại."});
+  };
+  c.appendChild(b);c.appendChild(v);c.appendChild(msg);show([c]);
+}
+
+var m=location.pathname.match(/^\/t\/([^\/]+)\/?$/);
+if(!m){landing()}
+else{
+  var qs=new URLSearchParams(location.search),code=decodeURIComponent(m[1]),k=qs.get("k")||"",ship=qs.get("s")||"",ord=qs.get("order")||"";
+  fetch("/api/public/lot?c="+encodeURIComponent(code)+"&k="+encodeURIComponent(k)+(ship?"&s="+encodeURIComponent(ship):"")+(ord?"&order="+encodeURIComponent(ord):""),{cache:"no-store"}).then(function(r){return r.json().then(function(j){if(!r.ok)throw new Error(j.error||"Lỗi");return j})})
+    .then(render).catch(function(e){fail("Mã QR không hợp lệ",e.message&&e.message!=="Failed to fetch"?e.message+". Tem có thể bị hỏng hoặc không phải tem của hệ thống.":"Không kết nối được máy chủ. Vui lòng thử lại.")});
+}
+})();
+</script>
+</body>
+</html>

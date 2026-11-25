@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kho Xanh">
+  <rect width="64" height="64" rx="18" fill="#12261B"/>
+  <path d="M33 11C48 13 52 29 41 40 34 47 23 45 21 34 19 23 24 13 33 11Z" fill="#C8F03C"/>
+  <path d="M25 42C29 34 34 28 41 21" fill="none" stroke="#12261B" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M15 51H49" stroke="#C8F03C" stroke-width="4" stroke-linecap="round"/>
+</svg>

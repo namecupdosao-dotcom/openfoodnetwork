@@ -1,0 +1,2603 @@
+[
+  {
+    "id": 1,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Ghi nhận nhanh chóng, chính xác sản lượng và thời điểm thu hoạch giao vào kho",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "nd-giao-hang",
+    "note": "Nông dân tự lập phiếu giao hàng ghi sản lượng, ngày thu hoạch, phương tiện và nhận mã QR. Kho cân thực tế khi nhập."
+  },
+  {
+    "id": 2,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Tra cứu lịch sử giao hàng, sản lượng đã cung ứng và tình trạng công nợ thanh toán",
+    "pri": "Trung bình",
+    "status": "DA_LAM",
+    "module": "nd-cong-no",
+    "note": "Nông dân xem lịch sử giao hàng, số lượng thực nhập, tỷ lệ hao hụt, công nợ và lịch sử thanh toán."
+  },
+  {
+    "id": 3,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Nhận thông báo sớm về lịch thu mua, sản lượng cần và tiêu chuẩn chất lượng đầu vào",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "nd-keo",
+    "note": "Nông dân xem yêu cầu thu mua đang mở (sản lượng, tiêu chuẩn, khoảng giá, hạn giao). Chưa có thông báo đẩy."
+  },
+  {
+    "id": 4,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Lập kế hoạch thu hoạch nông sản theo từng vụ/đợt (loại cây, diện tích, sản lượng dự kiến, ngày thu hoạch dự kiến)",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "ke-hoach",
+    "note": "Lập kế hoạch thu hoạch theo nhà cung cấp, mặt hàng, diện tích, sản lượng, ngày. Do nhân viên kho nhập hộ."
+  },
+  {
+    "id": 5,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Điều chỉnh, hoãn hoặc hủy kế hoạch thu hoạch khi thời tiết/sâu bệnh thay đổi và thông báo cho kho",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "ke-hoach",
+    "note": "Hoãn, hủy, xác nhận kế hoạch có ghi nhật ký. Chưa gửi thông báo."
+  },
+  {
+    "id": 6,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Đăng ký lịch hẹn giao hàng (khung giờ, phương tiện, sản lượng) vào kho",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "nd-giao-hang",
+    "note": "Phiếu giao hàng có sản lượng, kho nhận, biển số xe. Chưa có khung giờ hẹn."
+  },
+  {
+    "id": 7,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Xem giá thu mua hiện hành và giá thị trường nông sản được cập nhật thường xuyên",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "ke-hoach",
+    "note": "Xem giá thu mua và giá thị trường. Nông dân chưa có tài khoản."
+  },
+  {
+    "id": 8,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Xem nhu cầu thu mua đang mở của doanh nghiệp/đại lý và đăng ký cung ứng",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "nd-keo",
+    "note": "Nông dân xem nhu cầu thu mua đang mở và nhận kèo một phần hoặc trọn gói."
+  },
+  {
+    "id": 9,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Khai báo và quản lý thông tin vùng trồng, lô đất, mùa vụ (diện tích, giống, ngày gieo trồng, mã vùng trồng)",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 10,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Ghi nhật ký canh tác điện tử (bón phân, phun thuốc BVTV, tưới tiêu, thời gian cách ly)",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 11,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Ký kết và theo dõi hợp đồng bao tiêu/hợp đồng thu mua (sản lượng, giá, thời hạn, điều khoản)",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "nd-keo",
+    "note": "Kèo thu mua có sản lượng, giá, hạn giao và tiền cọc, doanh nghiệp duyệt. Chưa có hợp đồng ký điện tử."
+  },
+  {
+    "id": 12,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Xem và xác nhận/phản hồi kết quả cân, phân loại, kiểm định chất lượng của lô giao",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "nd-cong-no",
+    "note": "Nông dân xem kết quả cân, phân loại Loại 1/Loại 2 và hàng hỏng. Chưa có nút phản hồi."
+  },
+  {
+    "id": 13,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Xem phiếu thanh toán điện tử, chi tiết khấu trừ (tạm ứng, vật tư, hàng không đạt)",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "nd-cong-no",
+    "note": "Có thành tiền, đã trả, còn nợ, hoàn cọc. Chưa có khấu trừ tạm ứng, vật tư."
+  },
+  {
+    "id": 14,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Cập nhật chi phí phục vụ sản xuất cho mỗi đợt (giống, phân bón, thuốc BVTV, nhân công, vận chuyển, khác)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 15,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Cập nhật thông tin hỗ trợ kỹ thuật nhận được trong mỗi đợt (đơn vị/người hỗ trợ, nội dung, ngày, kết quả)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 16,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Gửi yêu cầu tư vấn/hỗ trợ kỹ thuật khi gặp sâu bệnh, thời tiết bất thường (kèm hình ảnh)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 17,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Đề nghị tạm ứng tiền hoặc vật tư và theo dõi số dư nợ tạm ứng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 18,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Nhận thông báo (ứng dụng, SMS, Zalo) về kết quả nhập kho, thanh toán, thay đổi lịch, cảnh báo giá",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 19,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Nhận cảnh báo thời tiết, dịch bệnh, khuyến cáo mùa vụ theo vùng trồng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 20,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Đăng chào bán nông sản (loại, sản lượng, giá mong muốn, thời gian có hàng) cho đại lý/thương lái",
+    "pri": "Trung bình",
+    "status": "DA_LAM",
+    "module": "nd-chao-ban",
+    "note": "Nông dân đăng chào bán (loại, sản lượng, giá mong muốn, ngày thu hoạch, tiêu chuẩn), kho duyệt chốt mua."
+  },
+  {
+    "id": 21,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Quản lý danh sách xã viên, phân bổ sản lượng và phân chia lợi nhuận trong Hợp tác xã",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 22,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Khai báo sự cố mùa vụ (thiên tai, sâu bệnh, mất mùa) và điều chỉnh sản lượng cam kết",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 23,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Giao diện tiếng Việt đơn giản, dùng được trên điện thoại cấu hình thấp và khi mạng yếu/ngoại tuyến",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "tong-quan",
+    "note": "Giao diện tiếng Việt, dùng được trên điện thoại. Chưa chạy ngoại tuyến."
+  },
+  {
+    "id": 24,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Gửi khiếu nại, kiến nghị về giá, chất lượng đánh giá, thanh toán và theo dõi kết quả xử lý",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 25,
+    "who": "Nông dân / Hợp tác xã sản xuất",
+    "name": "Xem báo cáo thống kê năng suất, chi phí, lợi nhuận qua các vụ để so sánh",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 26,
+    "who": "Quản lý vùng nguyên liệu / Kỹ thuật viên vùng trồng",
+    "name": "Quản lý danh sách nông hộ, vùng trồng, bản đồ/tọa độ GPS, diện tích, loại cây trồng",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 27,
+    "who": "Quản lý vùng nguyên liệu / Kỹ thuật viên vùng trồng",
+    "name": "Tổng hợp, phê duyệt và cân đối kế hoạch thu hoạch của các nông hộ theo từng đợt",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "ke-hoach",
+    "note": "Tổng hợp và xác nhận kế hoạch các đợt. Chưa có duyệt nhiều cấp."
+  },
+  {
+    "id": 28,
+    "who": "Quản lý vùng nguyên liệu / Kỹ thuật viên vùng trồng",
+    "name": "Giám sát việc tuân thủ quy trình canh tác, thời gian cách ly thuốc BVTV trước thu hoạch",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "kiem-dinh",
+    "note": "Kiểm tra thời gian cách ly khi kiểm định lô. Chưa giám sát tại vùng trồng."
+  },
+  {
+    "id": 29,
+    "who": "Quản lý vùng nguyên liệu / Kỹ thuật viên vùng trồng",
+    "name": "Phân bổ lịch/hạn ngạch thu hoạch giữa các nông hộ để cung ứng đều theo thời gian",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 30,
+    "who": "Quản lý vùng nguyên liệu / Kỹ thuật viên vùng trồng",
+    "name": "Ước tính sản lượng và theo dõi tiến độ sinh trưởng của từng vùng trồng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 31,
+    "who": "Quản lý vùng nguyên liệu / Kỹ thuật viên vùng trồng",
+    "name": "Giám sát chi phí sản xuất của từng đợt và so sánh với định mức",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 32,
+    "who": "Quản lý vùng nguyên liệu / Kỹ thuật viên vùng trồng",
+    "name": "Ghi nhận kết quả thăm đồng/kiểm tra hiện trường (hình ảnh, biên bản)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 33,
+    "who": "Quản lý vùng nguyên liệu / Kỹ thuật viên vùng trồng",
+    "name": "Điều phối nhân công, phương tiện thu hoạch và thu gom tại vùng trồng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 34,
+    "who": "Quản lý vùng nguyên liệu / Kỹ thuật viên vùng trồng",
+    "name": "Quản lý hồ sơ chứng nhận của vùng trồng và cảnh báo khi sắp hết hạn",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 35,
+    "who": "Quản lý vùng nguyên liệu / Kỹ thuật viên vùng trồng",
+    "name": "Ghi nhận, báo cáo thiệt hại do thiên tai, dịch bệnh và đề xuất phương án hỗ trợ",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 36,
+    "who": "Cán bộ khuyến nông / Chuyên gia hỗ trợ kỹ thuật",
+    "name": "Ghi nhận nội dung hỗ trợ kỹ thuật của mỗi đợt (khuyến cáo, quy trình, vật tư khuyến nghị, kết quả)",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 37,
+    "who": "Cán bộ khuyến nông / Chuyên gia hỗ trợ kỹ thuật",
+    "name": "Lập kế hoạch hỗ trợ kỹ thuật cho từng đợt/vùng trồng (lịch thăm vườn, tập huấn, đối tượng)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 38,
+    "who": "Cán bộ khuyến nông / Chuyên gia hỗ trợ kỹ thuật",
+    "name": "Tiếp nhận và phản hồi yêu cầu tư vấn của nông dân (kèm hình ảnh hiện trường)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 39,
+    "who": "Cán bộ khuyến nông / Chuyên gia hỗ trợ kỹ thuật",
+    "name": "Xem nhật ký canh tác và tình hình sâu bệnh của vùng trồng để đưa ra tư vấn phù hợp",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 40,
+    "who": "Cán bộ khuyến nông / Chuyên gia hỗ trợ kỹ thuật",
+    "name": "Phát cảnh báo dịch bệnh, thời tiết, khuyến cáo kỹ thuật đến nhóm nông dân theo vùng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 41,
+    "who": "Cán bộ khuyến nông / Chuyên gia hỗ trợ kỹ thuật",
+    "name": "Đề xuất thời điểm thu hoạch tối ưu theo độ chín, thời tiết và nhu cầu thị trường",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 42,
+    "who": "Cán bộ khuyến nông / Chuyên gia hỗ trợ kỹ thuật",
+    "name": "Quản lý thư viện kỹ thuật (quy trình canh tác, tài liệu, video hướng dẫn)",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 43,
+    "who": "Cán bộ khuyến nông / Chuyên gia hỗ trợ kỹ thuật",
+    "name": "Quản lý lớp tập huấn: lịch, danh sách tham dự, tài liệu, kết quả đánh giá",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 44,
+    "who": "Cán bộ khuyến nông / Chuyên gia hỗ trợ kỹ thuật",
+    "name": "Đánh giá kết quả áp dụng kỹ thuật (so sánh năng suất, chất lượng trước và sau hỗ trợ)",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 45,
+    "who": "Cán bộ khuyến nông / Chuyên gia hỗ trợ kỹ thuật",
+    "name": "Lập báo cáo hoạt động hỗ trợ kỹ thuật theo kỳ, vùng, đợt",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 46,
+    "who": "Nhà cung cấp vật tư đầu vào (giống, phân bón, thuốc BVTV, bao bì)",
+    "name": "Cung cấp thông tin lô vật tư (nguồn gốc, hạn dùng, hoạt chất, thời gian cách ly) gắn với đợt sản xuất",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 47,
+    "who": "Nhà cung cấp vật tư đầu vào (giống, phân bón, thuốc BVTV, bao bì)",
+    "name": "Quản lý danh mục, giá và thông tin sản phẩm vật tư (giống, phân bón, thuốc BVTV, bao bì)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 48,
+    "who": "Nhà cung cấp vật tư đầu vào (giống, phân bón, thuốc BVTV, bao bì)",
+    "name": "Nhận đơn đặt vật tư điện tử từ nông dân/Hợp tác xã/doanh nghiệp và xác nhận giao hàng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 49,
+    "who": "Nhà cung cấp vật tư đầu vào (giống, phân bón, thuốc BVTV, bao bì)",
+    "name": "Theo dõi công nợ vật tư bán chịu/ứng trước và khấu trừ vào tiền thu mua nông sản",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 50,
+    "who": "Nhà cung cấp vật tư đầu vào (giống, phân bón, thuốc BVTV, bao bì)",
+    "name": "Xác nhận giao nhận vật tư và lưu chứng từ",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 51,
+    "who": "Nhà cung cấp vật tư đầu vào (giống, phân bón, thuốc BVTV, bao bì)",
+    "name": "Đăng thông báo sản phẩm mới, khuyến cáo sử dụng, thu hồi vật tư kém chất lượng",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 52,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Tạo và xác nhận đơn đặt hàng (Purchase Order) với nhà kho theo hình thức điện tử",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 53,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Cập nhật và tham chiếu giá thu mua nông sản theo từng thời điểm, mùa vụ",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "ke-hoach",
+    "note": "Ghi giá thu mua theo ngày. Chưa theo mùa vụ."
+  },
+  {
+    "id": 54,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Tạo nhu cầu/kế hoạch thu mua trong tương lai (loại nông sản, sản lượng, thời gian cần, tiêu chuẩn, giá dự kiến)",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 55,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Công bố nhu cầu thu mua để nông dân/Hợp tác xã xem và đăng ký cung ứng",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 56,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Cập nhật giá thị trường nông sản theo ngày, khu vực, chợ để chia sẻ cho người dân theo dõi",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "ke-hoach",
+    "note": "Nhập giá thị trường theo ngày, theo chợ."
+  },
+  {
+    "id": 57,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Sửa, hủy, theo dõi trạng thái và lịch sử các đơn đặt hàng (PO) đã tạo",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 58,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Tạo phiếu thu mua tại vườn/điểm thu mua (ghi cân nặng, giá, thanh toán ngay)",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "nhap-kho",
+    "note": "Phiếu nhập ghi cân nặng, nhà cung cấp. Chưa có giá và thanh toán."
+  },
+  {
+    "id": 59,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Theo dõi công nợ, lịch sử giao dịch và đối chiếu với nhà kho",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 60,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Lập báo giá, thương lượng và chốt giá với nông dân/nhà kho",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 61,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Lập và theo dõi hợp đồng thu mua (số lượng, giá, thời hạn, phạt vi phạm)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 62,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Xem lịch sử giá và biểu đồ biến động giá để quyết định thời điểm thu mua",
+    "pri": "Trung bình",
+    "status": "DA_LAM",
+    "module": "ke-hoach",
+    "note": "Lịch sử giá và biểu đồ biến động theo mặt hàng."
+  },
+  {
+    "id": 63,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Nhận thông báo khi giá nông sản biến động vượt ngưỡng đã đặt",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 64,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Đặt lịch giao hàng và nhận xác nhận nhập kho/phiếu cân",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 65,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Phản hồi/khiếu nại kết quả kiểm định chất lượng hoặc chênh lệch khối lượng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 66,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Đề nghị tạm ứng/thanh toán và nhận chứng từ, hóa đơn điện tử",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 67,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Xuất báo cáo thu mua theo kỳ, vùng, mặt hàng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 68,
+    "who": "Nhà cung cấp / Đại lý thu mua",
+    "name": "Quản lý danh sách nông dân, thương lái cấp dưới và đánh giá mức độ uy tín",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 69,
+    "who": "Bộ phận Thu mua của doanh nghiệp",
+    "name": "Lập kế hoạch thu mua theo mùa vụ dựa trên đơn bán đã chốt và dự báo nhu cầu",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 70,
+    "who": "Bộ phận Thu mua của doanh nghiệp",
+    "name": "Phát hành đơn mua cho nông dân/đại lý với quy trình duyệt nhiều cấp theo giá trị đơn",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 71,
+    "who": "Bộ phận Thu mua của doanh nghiệp",
+    "name": "Công bố bảng giá thu mua chính thức theo mặt hàng, chất lượng, thời điểm",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "ke-hoach",
+    "note": "Có bảng giá thu mua. Chưa có quy trình công bố chính thức."
+  },
+  {
+    "id": 72,
+    "who": "Bộ phận Thu mua của doanh nghiệp",
+    "name": "So sánh giá chào và năng lực giao hàng của nhiều nhà cung cấp",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 73,
+    "who": "Bộ phận Thu mua của doanh nghiệp",
+    "name": "Theo dõi tiến độ giao hàng, đơn mua còn mở, đơn trễ hạn",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 74,
+    "who": "Bộ phận Thu mua của doanh nghiệp",
+    "name": "Đánh giá nhà cung cấp/nông dân theo chất lượng, đúng hạn, đúng cam kết",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 75,
+    "who": "Bộ phận Thu mua của doanh nghiệp",
+    "name": "Quản lý hợp đồng bao tiêu và nhắc hạn hợp đồng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 76,
+    "who": "Bộ phận Thu mua của doanh nghiệp",
+    "name": "Báo cáo mua hàng theo nhà cung cấp, mặt hàng, vùng, kỳ",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 77,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Theo dõi tồn kho theo thời gian thực, phân loại theo từng lô hàng (batch) và hạn sử dụng",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "ton-kho",
+    "note": "Tồn theo lô và hạn dùng, lấy trực tiếp từ cơ sở dữ liệu."
+  },
+  {
+    "id": 78,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Cảnh báo tự động khi lô hàng sắp hết hạn sử dụng hoặc tồn kho vượt/dưới ngưỡng an toàn",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "tong-quan",
+    "note": "Cảnh báo lô còn ≤ 3 ngày và hàng dưới ngưỡng an toàn trên trang Tổng quan."
+  },
+  {
+    "id": 79,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Bố trí và quản lý vị trí lưu trữ theo khu vực: kho thường, kho mát, kho lạnh",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "nhap-kho",
+    "note": "Kho phân theo dải nhiệt độ, hệ thống chặn nhập sai kho. Chưa chia khu vực chi tiết."
+  },
+  {
+    "id": 80,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Lập báo cáo tỷ lệ hao hụt, hư hỏng nông sản theo từng đợt nhập/xuất",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 81,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Quản lý danh mục sản phẩm/SKU, đơn vị tính, quy cách đóng gói, điều kiện bảo quản, hạn dùng tiêu chuẩn",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "nhap-kho",
+    "note": "Danh mục mặt hàng có hạn dùng, nhiệt độ, ngưỡng. Chưa có màn hình thêm/sửa."
+  },
+  {
+    "id": 82,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Quản lý nhiều kho/chi nhánh, sơ đồ kho (khu, dãy, kệ, ô) và sức chứa từng vị trí",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "tong-quan",
+    "note": "Có 3 kho với sức chứa riêng. Chưa có sơ đồ khu/dãy/kệ."
+  },
+  {
+    "id": 83,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Lập kế hoạch tiếp nhận hàng theo lịch thu hoạch/lịch giao và giữ trước vị trí lưu trữ",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "ke-hoach",
+    "note": "Kế hoạch thu hoạch cho thấy hàng sắp về. Chưa giữ trước vị trí lưu trữ."
+  },
+  {
+    "id": 84,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Phê duyệt phiếu nhập kho, xuất kho, điều chỉnh tồn và điều chuyển",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "nhap-kho",
+    "note": "Duyệt phiếu nhập, xuất theo đơn và điều chỉnh tồn có phân quyền. Chưa có điều chuyển."
+  },
+  {
+    "id": 85,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Kiểm kê định kỳ/đột xuất, đối chiếu và xử lý chênh lệch tồn kho",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "ton-kho",
+    "note": "Kiểm kê từng lô, chênh lệch trên 2% cần Quản lý kho duyệt."
+  },
+  {
+    "id": 86,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Giám sát nhiệt độ, độ ẩm kho theo thời gian thực và cảnh báo khi vượt ngưỡng",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 87,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Báo cáo nhập - xuất - tồn theo ngày/tuần/tháng, theo kho, lô, mặt hàng",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "bao-cao",
+    "note": "Báo cáo nhập-xuất-tồn theo mặt hàng. Chưa lọc theo ngày/tuần/tháng."
+  },
+  {
+    "id": 88,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Xem lịch sử toàn bộ giao dịch của từng lô (nhật ký thay đổi) phục vụ quy trách nhiệm",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "ton-kho",
+    "note": "Lịch sử giao dịch từng lô, ghi người thực hiện."
+  },
+  {
+    "id": 89,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Điều chuyển hàng giữa các kho/khu vực lưu trữ và theo dõi hàng đang chuyển",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 90,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Xử lý hàng hư hỏng, hàng trả về: hủy, hạ cấp, thanh lý, bán giảm giá hàng cận hạn",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 91,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Cảnh báo hàng tồn lâu, chậm luân chuyển và đề xuất cách xử lý",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 92,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Thiết lập mức tồn tối thiểu/tối đa và nhận đề xuất bổ sung hàng",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "tong-quan",
+    "note": "Có mức tồn tối thiểu và cảnh báo. Chưa có mức tối đa và đề xuất bổ sung."
+  },
+  {
+    "id": 93,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Giao việc và phân ca cho nhân viên kho (nhập, xuất, kiểm kê, sắp xếp)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 94,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Quản lý lịch hẹn xe ra/vào kho (khung giờ, cổng nhận/xuất)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 95,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Quản lý vật tư kho: pallet, thùng, khay, bao bì, nhãn",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 96,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Ghi nhận và xử lý sự cố kho (mất điện, hỏng kho lạnh, cháy, mất hàng, hư hại)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 97,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Theo dõi chi phí lưu kho và chi phí vận hành kho theo kho/mặt hàng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 98,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Báo cáo công suất sử dụng kho, hiệu suất vị trí lưu trữ",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 99,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Theo dõi năng suất xử lý của nhân viên và của từng ca",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 100,
+    "who": "Quản lý kho (Warehouse Manager)",
+    "name": "Quản lý hàng ký gửi/kho thuê ngoài (kho bên thứ ba)",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 101,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "Sử dụng ứng dụng quét mã vạch/QR để nhập, xuất hàng nhanh chóng, giảm sai sót thủ công",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 102,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "Hệ thống gợi ý xuất hàng theo nguyên tắc hàng hết hạn trước (FEFO – First Expired First Out)",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "don-hang",
+    "note": "Giữ hàng tự động theo FEFO (hết hạn trước lấy trước)."
+  },
+  {
+    "id": 103,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "Giao diện thao tác đơn giản, hoạt động tốt trên thiết bị di động/cầm tay tại hiện trường kho",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "tong-quan",
+    "note": "Giao diện co giãn cho điện thoại, menu đáy màn hình. Chưa tối ưu thiết bị cầm tay."
+  },
+  {
+    "id": 104,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "Lập phiếu nhập kho: nhận hàng, cân, đếm, đối chiếu với đơn mua/phiếu giao",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "nhap-kho",
+    "note": "Lập phiếu nhập với khối lượng cân thực tế, ngày thu hoạch, nhà cung cấp."
+  },
+  {
+    "id": 105,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "Lập phiếu xuất kho theo đơn bán, soạn hàng (picking), đóng gói và kiểm tra trước khi giao",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "don-hang",
+    "note": "Xuất kho theo đơn, trừ tồn và ghi sổ cái. Chưa có bước soạn hàng (picking)."
+  },
+  {
+    "id": 106,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "In tem nhãn mã vạch/QR cho lô, pallet, thùng ngay khi nhập kho",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "truy-xuat",
+    "note": "In tem QR cho từng lô ngay trên trang Truy xuất (trang in tem /tem). Chưa có tem cho pallet, thùng và chưa kết nối máy in tem."
+  },
+  {
+    "id": 107,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "Kiểm kê tồn kho bằng quét mã trên thiết bị di động",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 108,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "Xem hướng dẫn vị trí cất hàng (put-away) và vị trí lấy hàng gợi ý",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 109,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "Chuyển vị trí/điều chuyển nội bộ giữa các ô, khu vực",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 110,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "Ghi nhận hàng thiếu, thừa, hư hỏng, sai quy cách khi nhận (kèm hình ảnh)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 111,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "Ghi nhận hàng trả về từ khách hàng và phân loại xử lý",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 112,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "Nhận danh sách công việc được giao và thông báo ca làm",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 113,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "Làm việc khi mất mạng và tự đồng bộ dữ liệu khi có mạng lại",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 114,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "Kết nối cân điện tử, máy in tem, máy quét cầm tay",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 115,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "Xác nhận bàn giao hàng với tài xế bằng chữ ký điện tử",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 116,
+    "who": "Nhân viên kho (thủ kho, nhân viên nhập/xuất)",
+    "name": "Báo sự cố nhanh và ghi chú tại hiện trường",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 117,
+    "who": "Bảo vệ / An ninh cổng kho",
+    "name": "Kiểm soát xe và người ra/vào cổng kho (ghi biển số, giờ vào/ra)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 118,
+    "who": "Bảo vệ / An ninh cổng kho",
+    "name": "Đối chiếu phiếu xuất kho/lệnh vận chuyển với hàng thực tế khi xe ra cổng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 119,
+    "who": "Bảo vệ / An ninh cổng kho",
+    "name": "Cảnh báo xe/hàng không có lệnh hợp lệ",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 120,
+    "who": "Bảo vệ / An ninh cổng kho",
+    "name": "Gắn dữ liệu camera giám sát với giao dịch nhập/xuất khi cần kiểm tra",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 121,
+    "who": "Bộ phận Sơ chế / Đóng gói",
+    "name": "Tạo lô thành phẩm gắn với lô nguyên liệu gốc (gộp/tách lô)",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 122,
+    "who": "Bộ phận Sơ chế / Đóng gói",
+    "name": "Lập lệnh sơ chế/đóng gói từ lô nguyên liệu (phân loại, rửa, cắt tỉa, đóng gói)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 123,
+    "who": "Bộ phận Sơ chế / Đóng gói",
+    "name": "Ghi nhận khối lượng đầu vào/đầu ra, tỷ lệ hao hụt và phế phẩm của từng lệnh",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 124,
+    "who": "Bộ phận Sơ chế / Đóng gói",
+    "name": "Quản lý bao bì, nhãn mác và định mức vật tư đóng gói",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 125,
+    "who": "Bộ phận Sơ chế / Đóng gói",
+    "name": "Tự động tính hạn sử dụng mới của thành phẩm sau sơ chế",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 126,
+    "who": "Bộ phận Sơ chế / Đóng gói",
+    "name": "Quản lý quy cách đóng gói theo yêu cầu từng khách hàng/kênh bán",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 127,
+    "who": "Bộ phận Bảo trì thiết bị / Hạ tầng kho",
+    "name": "Nhận cảnh báo khi thiết bị hỏng hoặc hoạt động lệch chuẩn (nhiệt độ, nguồn điện)",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 128,
+    "who": "Bộ phận Bảo trì thiết bị / Hạ tầng kho",
+    "name": "Quản lý danh sách thiết bị (kho lạnh, cảm biến, cân, xe nâng) và lịch bảo trì định kỳ",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 129,
+    "who": "Bộ phận Bảo trì thiết bị / Hạ tầng kho",
+    "name": "Ghi nhận sửa chữa, linh kiện và chi phí bảo trì",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 130,
+    "who": "Bộ phận Bảo trì thiết bị / Hạ tầng kho",
+    "name": "Theo dõi mức tiêu thụ điện/năng lượng của kho lạnh",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 131,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Ghi nhận kết quả kiểm định chất lượng, dư lượng thuốc bảo vệ thực vật cho từng lô trước khi nhập kho",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "kiem-dinh",
+    "note": "QA nhập dư lượng, phân hạng, kết luận cho từng lô."
+  },
+  {
+    "id": 132,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Lưu trữ và gắn chứng nhận VietGAP/GlobalGAP/Organic với từng lô nông sản cụ thể",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "truy-xuat",
+    "note": "Chứng nhận gắn với nhà cung cấp và hiện trong lô. Chưa lưu hồ sơ chứng nhận."
+  },
+  {
+    "id": 133,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Tự động cảnh báo/chặn nhập kho đối với lô hàng không đạt tiêu chuẩn chất lượng",
+    "pri": "Trung bình",
+    "status": "DA_LAM",
+    "module": "kiem-dinh",
+    "note": "Lô chưa đạt, cách ly hoặc không đạt không được bán và không được xuất."
+  },
+  {
+    "id": 134,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Thiết lập tiêu chuẩn chất lượng cho từng loại nông sản (kích cỡ, độ chín, độ ẩm, màu sắc, dư lượng tối đa)",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "kiem-dinh",
+    "note": "Có dư lượng tối đa, nhiệt độ, hạn dùng theo mặt hàng. Chưa có kích cỡ/độ chín."
+  },
+  {
+    "id": 135,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Phân loại/phân hạng lô hàng (loại 1, 2, 3) sau khi kiểm định",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "kiem-dinh",
+    "note": "Phân hạng Loại 1/2/3 khi kết luận Đạt."
+  },
+  {
+    "id": 136,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Kiểm tra chất lượng định kỳ trong quá trình lưu kho và trước khi xuất",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "kiem-dinh",
+    "note": "Có thể kiểm định lại lô bất kỳ lúc nào. Chưa có lịch kiểm tra định kỳ."
+  },
+  {
+    "id": 137,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Quản lý lô hàng bị giữ/cách ly, biên bản không đạt và hướng xử lý (trả, hủy, hạ cấp)",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "kiem-dinh",
+    "note": "Lô cách ly/không đạt được liệt kê riêng, có xử lý trả nhà cung cấp hoặc hủy khi đóng thu hồi."
+  },
+  {
+    "id": 138,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Đối chiếu thời gian cách ly thuốc BVTV trong nhật ký canh tác với ngày thu hoạch",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "kiem-dinh",
+    "note": "Máy chủ chặn kết luận Đạt nếu chưa đủ thời gian cách ly thuốc BVTV."
+  },
+  {
+    "id": 139,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Thu hồi (recall) lô hàng khi phát hiện sự cố và xác định nhanh phạm vi ảnh hưởng",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "kiem-dinh",
+    "note": "Thu hồi lô: khóa lô, nhả hàng đang giữ, liệt kê đơn và khách bị ảnh hưởng, theo dõi thông báo."
+  },
+  {
+    "id": 140,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Lập lịch và quy trình lấy mẫu kiểm tra",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 141,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Đính kèm hình ảnh, phiếu kết quả xét nghiệm từ phòng kiểm nghiệm bên ngoài",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 142,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Quản lý hạn hiệu lực chứng nhận và cảnh báo khi sắp hết hạn",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 143,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Thống kê tỷ lệ đạt/không đạt theo nhà cung cấp, vùng trồng, mặt hàng",
+    "pri": "Trung bình",
+    "status": "DA_LAM",
+    "module": "kiem-dinh",
+    "note": "Thống kê tỷ lệ lô đạt/không đạt theo nhà cung cấp."
+  },
+  {
+    "id": 144,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Xếp hạng nhà cung cấp/nông dân theo chất lượng",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "kiem-dinh",
+    "note": "Bảng chất lượng theo nhà cung cấp có tỷ lệ đạt. Chưa có xếp hạng tổng hợp."
+  },
+  {
+    "id": 145,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Tiếp nhận và xử lý khiếu nại chất lượng từ khách hàng, truy vết nguyên nhân",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 146,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Lưu hồ sơ kiểm tra vệ sinh kho và an toàn thực phẩm định kỳ",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 147,
+    "who": "Bộ phận Kiểm định chất lượng (QA/QC)",
+    "name": "Quản lý hiệu chuẩn thiết bị đo (cân, nhiệt kế, máy đo độ ngọt/độ ẩm)",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 148,
+    "who": "Tổ chức chứng nhận / Phòng kiểm nghiệm bên thứ ba",
+    "name": "Nhận thông tin mẫu và trả kết quả kiểm nghiệm điện tử gắn với đúng lô hàng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 149,
+    "who": "Tổ chức chứng nhận / Phòng kiểm nghiệm bên thứ ba",
+    "name": "Cấp/cập nhật chứng nhận (VietGAP, GlobalGAP, Organic) và lưu hồ sơ đánh giá trên hệ thống",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 150,
+    "who": "Tổ chức chứng nhận / Phòng kiểm nghiệm bên thứ ba",
+    "name": "Truy cập hồ sơ truy xuất, nhật ký canh tác phục vụ đoàn đánh giá/giám sát",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 151,
+    "who": "Quản lý Chuỗi cung ứng (Supply Chain Manager)",
+    "name": "Truy xuất nguồn gốc (traceability) trọn vòng đời của từng lô nông sản từ nông trại đến người tiêu dùng",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "truy-xuat",
+    "note": "Truy xuất từ nhà cung cấp, thu hoạch, nhập kho, kiểm định đến đơn hàng, khách và chuyến xe."
+  },
+  {
+    "id": 152,
+    "who": "Quản lý Chuỗi cung ứng (Supply Chain Manager)",
+    "name": "Dự báo nhu cầu và lập kế hoạch thu mua dựa trên dữ liệu tiêu thụ lịch sử theo mùa vụ",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 153,
+    "who": "Quản lý Chuỗi cung ứng (Supply Chain Manager)",
+    "name": "Quản lý và tối ưu tuyến vận chuyển giữa vùng nguyên liệu, kho trung tâm và điểm phân phối",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 154,
+    "who": "Quản lý Chuỗi cung ứng (Supply Chain Manager)",
+    "name": "Tổng hợp kế hoạch thu hoạch từ các vùng và cân đối với nhu cầu thu mua/đơn bán",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "ke-hoach",
+    "note": "Cân đối tồn khả dụng, hàng sắp về với nhu cầu đơn đang mở."
+  },
+  {
+    "id": 155,
+    "who": "Quản lý Chuỗi cung ứng (Supply Chain Manager)",
+    "name": "Cảnh báo thiếu hụt/dư thừa nguồn cung theo tuần/tháng/mùa vụ",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "ke-hoach",
+    "note": "Cảnh báo thiếu/dư theo cửa sổ 14 ngày. Chưa theo tuần/tháng/mùa vụ."
+  },
+  {
+    "id": 156,
+    "who": "Quản lý Chuỗi cung ứng (Supply Chain Manager)",
+    "name": "Theo dõi toàn bộ đơn mua/đơn bán theo trạng thái từ đầu đến cuối",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "don-hang",
+    "note": "Theo dõi đơn bán theo trạng thái. Chưa có đơn mua."
+  },
+  {
+    "id": 157,
+    "who": "Quản lý Chuỗi cung ứng (Supply Chain Manager)",
+    "name": "Quản lý hợp đồng với nông dân, nhà cung cấp, khách hàng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 158,
+    "who": "Quản lý Chuỗi cung ứng (Supply Chain Manager)",
+    "name": "Theo dõi chỉ số KPI chuỗi cung ứng (giao đúng hạn đủ số lượng, vòng quay tồn kho, tỷ lệ hao hụt, thời gian giao)",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "bao-cao",
+    "note": "Có nhập-xuất-tồn và tỷ lệ chất lượng. Chưa có vòng quay tồn kho, giao đúng hạn."
+  },
+  {
+    "id": 159,
+    "who": "Quản lý Chuỗi cung ứng (Supply Chain Manager)",
+    "name": "Đánh giá hiệu suất nhà cung cấp, nông dân và đối tác vận chuyển",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 160,
+    "who": "Quản lý Chuỗi cung ứng (Supply Chain Manager)",
+    "name": "Phân tích giá thị trường và xu hướng giá theo mặt hàng, vùng",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "ke-hoach",
+    "note": "Xu hướng giá 7 ngày theo mặt hàng. Chưa phân tích theo vùng."
+  },
+  {
+    "id": 161,
+    "who": "Quản lý Chuỗi cung ứng (Supply Chain Manager)",
+    "name": "Lập kế hoạch phân phối hàng từ kho trung tâm đến các điểm bán",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 162,
+    "who": "Quản lý Chuỗi cung ứng (Supply Chain Manager)",
+    "name": "Phân tích rủi ro chuỗi cung ứng (thời tiết, dịch bệnh, gián đoạn) và kế hoạch dự phòng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 163,
+    "who": "Quản lý Chuỗi cung ứng (Supply Chain Manager)",
+    "name": "Quản lý chi phí logistics trong toàn chuỗi",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 164,
+    "who": "Quản lý Chuỗi cung ứng (Supply Chain Manager)",
+    "name": "Xem bản đồ mạng lưới chuỗi cung ứng (vùng trồng, kho, điểm phân phối)",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 165,
+    "who": "Quản lý Chuỗi cung ứng (Supply Chain Manager)",
+    "name": "Mô phỏng kịch bản (what-if): thay đổi sản lượng, giá, tuyến vận chuyển",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 166,
+    "who": "Đối tác Vận chuyển / Logistics (xe lạnh, kho lạnh)",
+    "name": "Giám sát nhiệt độ, độ ẩm trong container/xe lạnh trong suốt quá trình vận chuyển",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "van-chuyen",
+    "note": "Có nhiệt độ thùng xe và cảnh báo vượt ngưỡng nhưng là số liệu mô phỏng."
+  },
+  {
+    "id": 167,
+    "who": "Đối tác Vận chuyển / Logistics (xe lạnh, kho lạnh)",
+    "name": "Cập nhật trạng thái vận chuyển (đang giao, đã giao, sự cố) theo thời gian thực cho các bên liên quan",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "van-chuyen",
+    "note": "Các trạng thái chuyến cập nhật khi tài xế/quản lý thao tác."
+  },
+  {
+    "id": 168,
+    "who": "Đối tác Vận chuyển / Logistics (xe lạnh, kho lạnh)",
+    "name": "Nhận và quản lý lệnh vận chuyển, gom đơn, lập kế hoạch chuyến xe",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "van-chuyen",
+    "note": "Xuất kho tự tạo chuyến xe. Chưa gom đơn, chưa lập kế hoạch nhiều chuyến."
+  },
+  {
+    "id": 169,
+    "who": "Đối tác Vận chuyển / Logistics (xe lạnh, kho lạnh)",
+    "name": "Theo dõi vị trí xe theo thời gian thực bằng GPS",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "van-chuyen",
+    "note": "GPS thật từ điện thoại tài xế, hiển thị trên bản đồ. Không dùng thiết bị gắn xe."
+  },
+  {
+    "id": 170,
+    "who": "Đối tác Vận chuyển / Logistics (xe lạnh, kho lạnh)",
+    "name": "Xác nhận giao nhận có bằng chứng (chữ ký điện tử, hình ảnh, biên bản giao nhận)",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "van-chuyen",
+    "note": "Xác nhận đã giao. Chưa có chữ ký hoặc ảnh."
+  },
+  {
+    "id": 171,
+    "who": "Đối tác Vận chuyển / Logistics (xe lạnh, kho lạnh)",
+    "name": "Nhận lộ trình tối ưu khi giao nhiều điểm",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 172,
+    "who": "Đối tác Vận chuyển / Logistics (xe lạnh, kho lạnh)",
+    "name": "Quản lý đội xe, tài xế, tải trọng và loại xe (thường/lạnh)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 173,
+    "who": "Đối tác Vận chuyển / Logistics (xe lạnh, kho lạnh)",
+    "name": "Nhận thông báo lịch lấy/giao hàng, địa chỉ, khung giờ",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 174,
+    "who": "Đối tác Vận chuyển / Logistics (xe lạnh, kho lạnh)",
+    "name": "Báo cáo sự cố, hư hỏng, chậm trễ trên đường kèm hình ảnh",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 175,
+    "who": "Đối tác Vận chuyển / Logistics (xe lạnh, kho lạnh)",
+    "name": "Tính cước vận chuyển và đối soát cước với doanh nghiệp",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 176,
+    "who": "Đối tác Vận chuyển / Logistics (xe lạnh, kho lạnh)",
+    "name": "Ghi nhận giờ vào/ra cổng kho và thời gian chờ bốc dỡ",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 177,
+    "who": "Đối tác Vận chuyển / Logistics (xe lạnh, kho lạnh)",
+    "name": "Hỗ trợ tài xế dùng ứng dụng di động đơn giản",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 178,
+    "who": "Đối tác Vận chuyển / Logistics (xe lạnh, kho lạnh)",
+    "name": "Quản lý chứng từ vận chuyển (phiếu xuất kho kiêm vận chuyển, giấy kiểm dịch đi kèm)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 179,
+    "who": "Đối tác Vận chuyển / Logistics (xe lạnh, kho lạnh)",
+    "name": "Quản lý lịch bảo dưỡng xe và xe lạnh",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 180,
+    "who": "Đối tác Vận chuyển / Logistics (xe lạnh, kho lạnh)",
+    "name": "Quản lý nhà vận chuyển thuê ngoài/bên thứ ba",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 181,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Đặt hàng trực tuyến và kiểm tra số lượng tồn kho khả dụng trước khi xác nhận đơn hàng",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "don-hang",
+    "note": "Tạo đơn, hệ thống kiểm tồn khả dụng trước khi nhận."
+  },
+  {
+    "id": 182,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Xem thông tin xuất xứ, hạn sử dụng, chứng nhận chất lượng của lô hàng trước khi nhận hàng",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "truy-xuat",
+    "note": "Xuất xứ, hạn dùng, chứng nhận xem được qua trang truy xuất công khai bằng mã QR. Chưa có cổng đăng nhập riêng cho nhà bán lẻ."
+  },
+  {
+    "id": 183,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Xem danh mục sản phẩm, giá bán theo nhóm khách hàng, chiết khấu, quy cách",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "don-hang",
+    "note": "Danh mục và giá bán theo mặt hàng. Chưa có giá theo nhóm khách, chiết khấu."
+  },
+  {
+    "id": 184,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Đặt hàng trước (pre-order) theo mùa vụ/đơn tương lai và hẹn ngày giao",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 185,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Theo dõi trạng thái đơn hàng và vị trí đơn vận chuyển",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "van-chuyen",
+    "note": "Trạng thái đơn và chuyến xe có bản đồ. Khách chưa có cổng riêng."
+  },
+  {
+    "id": 186,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Xác nhận nhận hàng, kiểm đếm và phản hồi chênh lệch",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 187,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Yêu cầu đổi trả/khiếu nại hàng kém chất lượng, theo dõi kết quả xử lý",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 188,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Xem công nợ, hạn mức tín dụng, sao kê và thanh toán trực tuyến",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 189,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Nhận hóa đơn điện tử và chứng từ",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 190,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Sửa/hủy đơn khi chưa xử lý và xem lịch sử đơn",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "don-hang",
+    "note": "Hủy được đơn chưa xuất kho. Chưa sửa đơn."
+  },
+  {
+    "id": 191,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Tạo đơn đặt hàng định kỳ/đơn mẫu để đặt lại nhanh",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 192,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Yêu cầu báo giá và theo dõi hợp đồng cung ứng dài hạn",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 193,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Nhận thông báo hàng mới, khuyến mãi, hàng cận hạn giá ưu đãi",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 194,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Chọn hình thức nhận hàng (giao tận nơi/nhận tại kho)",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 195,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Tích hợp dữ liệu với hệ thống ERP/POS của đối tác",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 196,
+    "who": "Nhà bán lẻ / Siêu thị / Đại lý phân phối",
+    "name": "Xem báo cáo lịch sử mua hàng",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 197,
+    "who": "Bộ phận Kinh doanh / Chăm sóc khách hàng",
+    "name": "Lập báo giá, đơn bán hàng và hợp đồng bán",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "don-hang",
+    "note": "Có đơn bán. Chưa có báo giá và hợp đồng."
+  },
+  {
+    "id": 198,
+    "who": "Bộ phận Kinh doanh / Chăm sóc khách hàng",
+    "name": "Kiểm tra tồn khả dụng và giữ hàng (reservation) cho đơn đã xác nhận",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "don-hang",
+    "note": "Giữ hàng cho đơn, hủy đơn thì nhả hàng."
+  },
+  {
+    "id": 199,
+    "who": "Bộ phận Kinh doanh / Chăm sóc khách hàng",
+    "name": "Quản lý thông tin khách hàng (CRM), phân nhóm và lịch sử giao dịch",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 200,
+    "who": "Bộ phận Kinh doanh / Chăm sóc khách hàng",
+    "name": "Quản lý chính sách giá, chiết khấu, khuyến mãi",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 201,
+    "who": "Bộ phận Kinh doanh / Chăm sóc khách hàng",
+    "name": "Theo dõi doanh số theo khách hàng, kênh, khu vực và nhân viên",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 202,
+    "who": "Bộ phận Kinh doanh / Chăm sóc khách hàng",
+    "name": "Theo dõi tiến độ giao đơn hàng và thông báo cho khách",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "van-chuyen",
+    "note": "Theo dõi giao đơn trong hệ thống. Chưa thông báo cho khách."
+  },
+  {
+    "id": 203,
+    "who": "Bộ phận Kinh doanh / Chăm sóc khách hàng",
+    "name": "Tiếp nhận, xử lý khiếu nại và đổi trả",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 204,
+    "who": "Bộ phận Kinh doanh / Chăm sóc khách hàng",
+    "name": "Quản lý bán chịu và nhắc công nợ khách hàng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 205,
+    "who": "Bộ phận Kinh doanh / Chăm sóc khách hàng",
+    "name": "Nhận đơn qua nhiều kênh (điện thoại, Zalo, ứng dụng, web)",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 206,
+    "who": "Bộ phận Kinh doanh / Chăm sóc khách hàng",
+    "name": "Quản lý chỉ tiêu và hoa hồng nhân viên bán hàng",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 207,
+    "who": "Người tiêu dùng cuối (Khách hàng)",
+    "name": "Tra cứu nguồn gốc nông sản qua mã QR để biết nơi trồng, ngày thu hoạch, quy trình bảo quản",
+    "pri": "Trung bình",
+    "status": "DA_LAM",
+    "module": "truy-xuat",
+    "note": "Quét mã QR trên tem để mở trang công khai (không cần đăng nhập): nơi trồng, ngày thu hoạch, điều kiện bảo quản, kết quả kiểm định, hạn dùng, cảnh báo thu hồi."
+  },
+  {
+    "id": 208,
+    "who": "Người tiêu dùng cuối (Khách hàng)",
+    "name": "Nhận được sản phẩm đảm bảo độ tươi, đúng hạn sử dụng khi mua hàng",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 209,
+    "who": "Người tiêu dùng cuối (Khách hàng)",
+    "name": "Xem thông tin chi tiết sản phẩm: nhà sản xuất, chứng nhận, hướng dẫn bảo quản, mùa vụ",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 210,
+    "who": "Người tiêu dùng cuối (Khách hàng)",
+    "name": "Xác thực sản phẩm chính hãng qua mã QR để chống hàng giả",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "truy-xuat",
+    "note": "Mã QR kèm mã xác thực HMAC-SHA256 nên không đoán hoặc sửa được đường dẫn của lô. Chưa có chữ ký số và chưa chống sao chép tem."
+  },
+  {
+    "id": 211,
+    "who": "Người tiêu dùng cuối (Khách hàng)",
+    "name": "Nhận thông tin thu hồi sản phẩm khi có sự cố",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "kiem-dinh",
+    "note": "Thu hồi ghi nhận khách đã được thông báo. Chưa gửi thông báo tự động."
+  },
+  {
+    "id": 212,
+    "who": "Người tiêu dùng cuối (Khách hàng)",
+    "name": "Gửi phản hồi, đánh giá, khiếu nại về sản phẩm",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 213,
+    "who": "Người tiêu dùng cuối (Khách hàng)",
+    "name": "Đặt mua trực tiếp và theo dõi giao hàng (nếu kênh bán lẻ trực tuyến)",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 214,
+    "who": "Người tiêu dùng cuối (Khách hàng)",
+    "name": "Xem chính sách đổi trả, bảo hành chất lượng",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 215,
+    "who": "Người dân / Cộng đồng theo dõi giá thị trường",
+    "name": "Xem giá thị trường nông sản được cập nhật theo ngày, khu vực, chợ",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "ke-hoach",
+    "note": "Giá thị trường theo ngày và chợ, cần đăng nhập."
+  },
+  {
+    "id": 216,
+    "who": "Người dân / Cộng đồng theo dõi giá thị trường",
+    "name": "Xem lịch sử và biểu đồ biến động giá của từng mặt hàng",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "ke-hoach",
+    "note": "Biểu đồ giá, cần đăng nhập."
+  },
+  {
+    "id": 217,
+    "who": "Người dân / Cộng đồng theo dõi giá thị trường",
+    "name": "Xem nhu cầu thu mua đang mở của các đại lý/doanh nghiệp",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 218,
+    "who": "Người dân / Cộng đồng theo dõi giá thị trường",
+    "name": "Đăng ký nhận thông báo khi giá vượt ngưỡng mong muốn",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 219,
+    "who": "Người dân / Cộng đồng theo dõi giá thị trường",
+    "name": "Xem dự báo xu hướng giá và nhu cầu sắp tới",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 220,
+    "who": "Người dân / Cộng đồng theo dõi giá thị trường",
+    "name": "Tra cứu công khai không bắt buộc đăng ký tài khoản",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 221,
+    "who": "Người dân / Cộng đồng theo dõi giá thị trường",
+    "name": "Dùng được trên điện thoại cấu hình thấp, mạng yếu",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 222,
+    "who": "Người dân / Cộng đồng theo dõi giá thị trường",
+    "name": "So sánh giá giữa các vùng/thị trường",
+    "pri": "Thấp",
+    "status": "MOT_PHAN",
+    "module": "ke-hoach",
+    "note": "So sánh giữa các chợ đầu mối đang nhập."
+  },
+  {
+    "id": 223,
+    "who": "Người dân / Cộng đồng theo dõi giá thị trường",
+    "name": "Đọc tin tức, khuyến cáo mùa vụ",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 224,
+    "who": "Người dân / Cộng đồng theo dõi giá thị trường",
+    "name": "Đóng góp báo giá từ thực tế (có kiểm duyệt)",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 225,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Tự động đối chiếu công nợ với nông dân/nhà cung cấp và công nợ với khách hàng",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 226,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Xuất báo cáo doanh thu, chi phí thu mua, giá vốn hàng bán theo từng lô hàng/kỳ báo cáo",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 227,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Quản lý bảng giá mua/giá bán và lịch sử thay đổi giá",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "ke-hoach",
+    "note": "Giá mua, giá thị trường có lịch sử. Chưa quản lý giá bán."
+  },
+  {
+    "id": 228,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Lập và quản lý thanh toán cho nông dân/nhà cung cấp theo lô/đợt, theo khối lượng thực nhận",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 229,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Xuất hóa đơn điện tử, phiếu thu, phiếu chi",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 230,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Quản lý công nợ phải thu: hạn mức tín dụng, nhắc nợ, phân tích tuổi nợ",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 231,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Tính giá vốn hàng tồn (bình quân/FIFO) và định giá tồn kho",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 232,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Quản lý thuế (VAT, thuế thu nhập) và hóa đơn đầu vào",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 233,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Xuất báo cáo lãi/lỗ theo lô, mặt hàng, khách hàng, vùng, mùa vụ",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 234,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Quản lý tạm ứng, vật tư ứng trước và khấu trừ khi thanh toán",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 235,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Hạch toán chi phí hao hụt, hư hỏng và hàng hủy",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 236,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Tổng hợp chi phí sản xuất từng đợt thu hoạch do nông dân cập nhật",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 237,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Đối soát thanh toán ngân hàng, ví điện tử, cổng thanh toán",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 238,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Kết nối với phần mềm kế toán đang sử dụng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 239,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Lập ngân sách, kế hoạch dòng tiền theo mùa vụ",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 240,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Quản lý chiết khấu, hoàn tiền và đổi trả",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 241,
+    "who": "Bộ phận Kế toán - Tài chính",
+    "name": "Lập biên bản xác nhận công nợ với đối tác và khóa sổ kỳ kế toán",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 242,
+    "who": "Ngân hàng / Cổng thanh toán / Bảo hiểm",
+    "name": "Thanh toán điện tử/chuyển khoản hàng loạt cho nông dân và nhà cung cấp",
+    "pri": "Cao",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 243,
+    "who": "Ngân hàng / Cổng thanh toán / Bảo hiểm",
+    "name": "Tiếp nhận thanh toán của khách hàng qua QR, ví điện tử, thẻ",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 244,
+    "who": "Ngân hàng / Cổng thanh toán / Bảo hiểm",
+    "name": "Đối soát giao dịch tự động với hệ thống",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 245,
+    "who": "Ngân hàng / Cổng thanh toán / Bảo hiểm",
+    "name": "Chia sẻ dữ liệu sản lượng, lịch sử giao dịch của nông hộ để đánh giá tín dụng (khi được đồng ý)",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 246,
+    "who": "Ngân hàng / Cổng thanh toán / Bảo hiểm",
+    "name": "Cung cấp dữ liệu sự cố, tổn thất cho hồ sơ bảo hiểm nông nghiệp/hàng hóa vận chuyển",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 247,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Hệ thống có khả năng mở rộng (scalable) khi số lượng kho, đối tác, giao dịch tăng trong tương lai",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 248,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Đảm bảo an toàn, bảo mật dữ liệu và phân quyền truy cập theo từng vai trò người dùng",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "tong-quan",
+    "note": "Đăng nhập, 4 vai trò, máy chủ chặn thao tác ngoài quyền."
+  },
+  {
+    "id": 249,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Hệ thống hoạt động ổn định, có phương án sao lưu và khôi phục dữ liệu khi gặp sự cố",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "tong-quan",
+    "note": "Dữ liệu lưu SQLite có giao dịch. Chưa sao lưu tự động."
+  },
+  {
+    "id": 250,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Quản lý tài khoản, vai trò, xác thực nhiều lớp (OTP/2FA) và khóa/mở tài khoản",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "tong-quan",
+    "note": "Có tài khoản và vai trò. Chưa có 2FA, chưa có khóa/mở tài khoản."
+  },
+  {
+    "id": 251,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Ghi nhật ký hoạt động (audit log) cho mọi thao tác quan trọng",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "nhat-ky",
+    "note": "Nhật ký mọi thao tác quan trọng, có người thực hiện và thời gian."
+  },
+  {
+    "id": 252,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Hỗ trợ ứng dụng web và di động (Android/iOS) trên nhiều loại thiết bị",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "tong-quan",
+    "note": "Ứng dụng web chạy trên điện thoại. Chưa có ứng dụng Android/iOS."
+  },
+  {
+    "id": 253,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Mã hóa dữ liệu khi truyền và khi lưu trữ",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "tong-quan",
+    "note": "Mật khẩu băm PBKDF2, truyền qua HTTPS khi triển khai công khai. Chưa mã hóa dữ liệu lưu trữ."
+  },
+  {
+    "id": 254,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Quản lý danh mục dùng chung (mặt hàng, đơn vị, khu vực, loại chất lượng, ngưỡng cảnh báo)",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "nhap-kho",
+    "note": "Danh mục dùng chung nạp sẵn. Chưa có màn hình quản trị."
+  },
+  {
+    "id": 255,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Cấu hình quy trình phê duyệt và ngưỡng cảnh báo mà không cần sửa mã nguồn",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 256,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Tích hợp hệ thống ngoài (kế toán, cổng thanh toán, GPS, cảm biến IoT, SMS/Zalo/email)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 257,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Quản lý thông báo đa kênh (ứng dụng, email, SMS, Zalo) và mẫu thông báo",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 258,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Giám sát tình trạng hệ thống và cảnh báo sự cố tự động",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 259,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Nhập/xuất dữ liệu hàng loạt bằng Excel/CSV",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 260,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Lưu trữ tệp đính kèm (hình ảnh, chứng nhận, hợp đồng)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 261,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Đáp ứng tải cao vào mùa thu hoạch và thời gian phản hồi nhanh",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 262,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Tuân thủ quy định bảo vệ dữ liệu cá nhân",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 263,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Cung cấp giao diện lập trình (API) cho đối tác",
+    "pri": "Thấp",
+    "status": "MOT_PHAN",
+    "module": "tong-quan",
+    "note": "Có REST API dùng token phiên. Chưa có khóa API cho đối tác."
+  },
+  {
+    "id": 264,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Có tài liệu hướng dẫn sử dụng và đào tạo người dùng",
+    "pri": "Thấp",
+    "status": "MOT_PHAN",
+    "module": "tong-quan",
+    "note": "Có README hướng dẫn chạy và kiến trúc. Chưa có tài liệu người dùng."
+  },
+  {
+    "id": 265,
+    "who": "Bộ phận IT / Quản trị hệ thống",
+    "name": "Hỗ trợ giao diện tiếng Việt và khả năng mở rộng sang ngôn ngữ khác",
+    "pri": "Thấp",
+    "status": "MOT_PHAN",
+    "module": "tong-quan",
+    "note": "Toàn bộ giao diện tiếng Việt. Chưa hỗ trợ đa ngôn ngữ."
+  },
+  {
+    "id": 266,
+    "who": "Bộ phận Nhân sự / Hành chính kho",
+    "name": "Quản lý ca làm, chấm công nhân viên kho",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 267,
+    "who": "Bộ phận Nhân sự / Hành chính kho",
+    "name": "Quản lý nhân công thời vụ trong mùa thu hoạch cao điểm",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 268,
+    "who": "Bộ phận Nhân sự / Hành chính kho",
+    "name": "Quản lý tập huấn an toàn lao động, vệ sinh thực phẩm cho nhân viên",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 269,
+    "who": "Ban Giám đốc / Chủ đầu tư",
+    "name": "Bảng điều khiển (Dashboard) tổng quan tình hình tồn kho, doanh thu, hiệu suất chuỗi cung ứng",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "tong-quan",
+    "note": "Bảng điều khiển tồn kho, doanh thu, xe đang giao, đơn chờ."
+  },
+  {
+    "id": 270,
+    "who": "Ban Giám đốc / Chủ đầu tư",
+    "name": "Dữ liệu phân tích hỗ trợ ra quyết định mở rộng vùng nguyên liệu, kho bãi, thị trường mới",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 271,
+    "who": "Ban Giám đốc / Chủ đầu tư",
+    "name": "Xem báo cáo tài chính tổng hợp: lợi nhuận theo mùa vụ, mặt hàng, kho",
+    "pri": "Cao",
+    "status": "MOT_PHAN",
+    "module": "tong-quan",
+    "note": "Có doanh thu. Chưa có lợi nhuận, giá vốn."
+  },
+  {
+    "id": 272,
+    "who": "Ban Giám đốc / Chủ đầu tư",
+    "name": "Phê duyệt kế hoạch thu mua, ngân sách, chính sách giá và đơn hàng giá trị lớn",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 273,
+    "who": "Ban Giám đốc / Chủ đầu tư",
+    "name": "Nhận cảnh báo rủi ro (hàng hết hạn, hao hụt cao, nợ quá hạn, thiếu nguồn cung)",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "tong-quan",
+    "note": "Cảnh báo hàng hết hạn, lô bị giữ, thiếu hàng. Chưa có cảnh báo hao hụt, nợ."
+  },
+  {
+    "id": 274,
+    "who": "Ban Giám đốc / Chủ đầu tư",
+    "name": "So sánh kết quả giữa các kỳ, vùng, kho",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 275,
+    "who": "Ban Giám đốc / Chủ đầu tư",
+    "name": "Xem dashboard trên điện thoại mọi lúc mọi nơi",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "tong-quan",
+    "note": "Dashboard co giãn trên điện thoại."
+  },
+  {
+    "id": 276,
+    "who": "Ban Giám đốc / Chủ đầu tư",
+    "name": "Đặt mục tiêu KPI và theo dõi mức độ hoàn thành",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 277,
+    "who": "Ban Giám đốc / Chủ đầu tư",
+    "name": "Xem báo cáo đánh giá nhà cung cấp, đối tác chiến lược",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 278,
+    "who": "Cơ quan quản lý Nhà nước (Kiểm dịch thực vật, An toàn thực phẩm)",
+    "name": "Lưu trữ đầy đủ hồ sơ kiểm dịch thực vật, an toàn thực phẩm phục vụ công tác thanh tra, kiểm tra",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 279,
+    "who": "Cơ quan quản lý Nhà nước (Kiểm dịch thực vật, An toàn thực phẩm)",
+    "name": "Xuất báo cáo truy xuất nguồn gốc nông sản theo đúng quy định pháp luật khi được yêu cầu",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "truy-xuat",
+    "note": "Trang truy xuất có nút in. Chưa có mẫu báo cáo theo quy định pháp luật."
+  },
+  {
+    "id": 280,
+    "who": "Cơ quan quản lý Nhà nước (Kiểm dịch thực vật, An toàn thực phẩm)",
+    "name": "Truy xuất nhanh toàn bộ lô liên quan và phối hợp thu hồi khi xảy ra sự cố an toàn thực phẩm",
+    "pri": "Cao",
+    "status": "DA_LAM",
+    "module": "kiem-dinh",
+    "note": "Từ một lô tìm ngay đơn và khách đã nhận, phối hợp thu hồi trong hệ thống."
+  },
+  {
+    "id": 281,
+    "who": "Cơ quan quản lý Nhà nước (Kiểm dịch thực vật, An toàn thực phẩm)",
+    "name": "Lưu trữ chứng từ, giấy phép (giấy chứng nhận cơ sở đủ điều kiện ATTP, kiểm dịch) kèm hạn hiệu lực",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 282,
+    "who": "Cơ quan quản lý Nhà nước (Kiểm dịch thực vật, An toàn thực phẩm)",
+    "name": "Báo cáo dư lượng thuốc BVTV và các vi phạm tiêu chuẩn theo yêu cầu",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "kiem-dinh",
+    "note": "Dư lượng từng lô xem được trong chi tiết lô. Chưa có báo cáo theo mẫu cơ quan quản lý."
+  },
+  {
+    "id": 283,
+    "who": "Cơ quan quản lý Nhà nước (Kiểm dịch thực vật, An toàn thực phẩm)",
+    "name": "Cung cấp thông tin mã số vùng trồng, cơ sở đóng gói theo quy định",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 284,
+    "who": "Cơ quan quản lý Nhà nước (Kiểm dịch thực vật, An toàn thực phẩm)",
+    "name": "Cấp quyền xem/tài khoản tra cứu cho cán bộ thanh tra, kiểm tra",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 285,
+    "who": "Đối tác xuất khẩu / Hải quan",
+    "name": "Lập hồ sơ xuất khẩu (giấy kiểm dịch, C/O, packing list, invoice) từ dữ liệu lô hàng",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 286,
+    "who": "Đối tác xuất khẩu / Hải quan",
+    "name": "Cung cấp truy xuất theo yêu cầu thị trường nhập khẩu (mã vùng trồng, cơ sở đóng gói)",
+    "pri": "Trung bình",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 287,
+    "who": "Đối tác xuất khẩu / Hải quan",
+    "name": "Kiểm soát tuân thủ tiêu chuẩn thị trường nhập khẩu (dư lượng tối đa, chứng nhận)",
+    "pri": "Trung bình",
+    "status": "MOT_PHAN",
+    "module": "kiem-dinh",
+    "note": "Chặn lô vượt dư lượng tối đa. Chưa có bộ tiêu chuẩn riêng cho từng thị trường."
+  },
+  {
+    "id": 288,
+    "who": "Đối tác xuất khẩu / Hải quan",
+    "name": "Theo dõi lô hàng container/lịch tàu/trạng thái thông quan",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  },
+  {
+    "id": 289,
+    "who": "Đối tác xuất khẩu / Hải quan",
+    "name": "Quản lý đơn hàng ngoại tệ và tỷ giá",
+    "pri": "Thấp",
+    "status": "HUONG",
+    "module": "",
+    "note": "Chưa làm, trình bày là hướng phát triển."
+  }
+]
